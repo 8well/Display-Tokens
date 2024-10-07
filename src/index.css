@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Hide cursor on body */
+body {
+  cursor: none;
+}
+
+/* Show default cursor on interactive elements */
+a, button, input, select, textarea {
+  cursor: auto;
+}
